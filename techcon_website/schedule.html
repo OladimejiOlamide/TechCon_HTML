@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule for TechCon 2024</title>
+    <!-- Consistent styling for the TechCon website -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0077b6; /* Conference blue */
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s, border-radius 0.3s;
+            border-radius: 8px;
+        }
+        nav ul li a:hover {
+            background-color: #005f99;
+        }
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        section h2 {
+            color: #0077b6;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        /* Table Styling for Schedule */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        caption {
+            /* Caption positioning for accessibility and readability */
+            padding: 10px;
+            font-style: italic;
+            text-align: left;
+            caption-side: top;
+            color: #555;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #0077b6;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        /* Highlighting for breaks */
+        .break {
+            background-color: #e0f7fa;
+            text-align: center;
+            font-style: italic;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Schedule for TechCon 2024</h1>
+        
+        <!-- NAVIGATION MENU -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT SECTION: SCHEDULE -->
+    <main>
+        
+        <section id="schedule-details">
+            <h2>Detailed Event Timeline</h2>
+            
+            <p>Welcome to the core schedule for the first day of TechCon 2024. All times are listed in Eastern Time (ET).</p>
+            
+            <table>
+                <!-- REQUIRED: Caption describing the table content -->
+                <caption>Detailed Schedule of Events for TechCon 2024</caption>
+                
+                <!-- Table Header -->
+                <thead>
+                    <tr>
+                        <!-- REQUIRED: Use scope attribute for accessibility -->
+                        <th scope="col">Time</th>
+                        <th scope="col">Session</th>
+                        <th scope="col">Speaker</th>
+                    </tr>
+                </thead>
+                
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>8:00 AM - 9:00 AM</td>
+                        <td colspan="2" class="break">Registration Opens & Welcome Coffee</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM - 10:00 AM</td>
+                        <td>Opening Keynote: The Ethical AI Revolution</td>
+                        <td>Dr. Evelyn Reed</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM - 10:30 AM</td>
+                        <td colspan="2" class="break">Networking Break</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM - 12:00 PM</td>
+                        <td>Workshop: Advanced CSS Layouts with Grid & Flex</td>
+                        <td>Alex Cho</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM - 1:00 PM</td>
+                        <td colspan="2" class="break">Lunch & Exhibitor Hall Access</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 PM - 2:30 PM</td>
+                        <td>Session: Quantum Computing for Developers</td>
+                        <td>Mia Sanchez</td>
+                    </tr>
+                    <tr>
+                        <td>2:30 PM - 3:30 PM</td>
+                        <td>Panel: Future of Web3 and Decentralization</td>
+                        <td>Various Experts</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION (Consistent with other pages) -->
+    <footer>
+        <p>copyright &copy; 2024 TechCon Conference. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
