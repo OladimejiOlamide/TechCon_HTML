@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About TechCon 2024</title>
+    <!-- 
+        Internal styling ensures visual consistency across the entire website.
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0077b6; /* Conference blue */
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s, border-radius 0.3s;
+            border-radius: 8px;
+        }
+        nav ul li a:hover {
+            background-color: #005f99;
+        }
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        article {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Separates the articles */
+        }
+        article h2 {
+            color: #0077b6;
+            margin-top: 0;
+            border-bottom: 2px solid #e0f0ff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .speaker-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .speaker-card {
+            flex: 1 1 300px; /* Flexible card layout for responsiveness */
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .speaker-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Circular images for speakers */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>About TechCon 2024</h1>
+        
+        <!-- NAVIGATION MENU -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT SECTION -->
+    <main>
+        
+        <!-- ARTICLE 1: HISTORY -->
+        <article id="history">
+            <h2>Our History: A Decade of Innovation</h2>
+            <p>
+                TechCon began in 2014 as a small, local meetup focused on open-source software and ethical hacking. Hosted originally in a university lecture hall, it quickly grew into a major national event, drawing thousands of attendees and leading experts in the fields of AI, data science, and web development. Our mission has always been to be accessible and inclusive, making complex technology understandable for everyone.
+            </p>
+            <p>
+                In 2020, TechCon moved entirely online, setting new standards for virtual conference engagement, before returning to a hybrid model that maximizes both in-person networking and global participation. We celebrate our 10th anniversary this year!
+            </p>
+            <!-- Historical Image Placeholder -->
+            <img 
+                src="https://placehold.co/800x200/cccccc/333333?text=First+TechCon+2014+Photo" 
+                alt="Photograph of the first small TechCon event in a lecture hall in 2014." 
+                style="width: 100%; height: auto; border-radius: 8px; margin-top: 15px;"
+            >
+        </article>
+
+        <!-- ARTICLE 2: MISSION -->
+        <article id="mission">
+            <h2>Our Mission and Vision</h2>
+            <p>
+                The primary mission of TechCon is to **empower the next generation of technologists** by providing a platform for knowledge sharing, critical debate, and mentorship. We are driven by three core principles:
+            </p>
+            <ul>
+                <li>**Inclusion:** Ensuring equal representation and participation from all backgrounds.</li>
+                <li>**Sustainability:** Promoting environmentally conscious and resource-efficient technology practices.</li>
+                <li>**Transparency:** Fostering open discussion about the ethical implications of emerging technologies.</li>
+            </ul>
+            <p>
+                Our vision is a future where technology serves humanity in a sustainable and equitable way.
+            </p>
+            <!-- Motivational Icon Placeholder -->
+             <img 
+                src="https://placehold.co/100x100/0077b6/ffffff?text=MISSION" 
+                alt="Stylized icon representing a rocket lifting off, symbolizing innovation and future growth." 
+                style="width: 100px; height: 100px; margin: 10px auto; display: block;"
+            >
+        </article>
+
+        <!-- ARTICLE 3: PAST SPEAKERS -->
+        <article id="speakers">
+            <h2>Notable Past Speakers</h2>
+            <div class="speaker-list">
+                
+                <!-- Speaker 1 -->
+                <div class="speaker-card">
+                    <img 
+                        src="https://placehold.co/100x100/555555/ffffff?text=DR+KIM" 
+                        alt="Portrait of Dr. Anya Kim, a software ethics expert."
+                    >
+                    <h3>Dr. Kazeem Oladimeji</h3>
+                    <p>Chief Ethical Officer at GlobalTech. Keynote on AI bias and accountability in 2022.</p>
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="speaker-card">
+                    <img 
+                        src="https://placehold.co/100x100/555555/ffffff?text=JANE+DOE" 
+                        alt="Portrait of Jane Doe, a machine learning engineer."
+                    >
+                    <h3>Amidat Ishola</h3>
+                    <p>Pioneering Machine Learning Engineer. Led a deep-dive workshop on neural networks in 2021.</p>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="speaker-card">
+                    <img 
+                        src="https://placehold.co/100x100/555555/ffffff?text=MR+LEE" 
+                        alt="Portrait of Mr. Chen Lee, a cybersecurity expert."
+                    >
+                    <h3>Mr. Chen Lee</h3>
+                    <p>Renowned Cybersecurity Analyst. Presented on zero-trust architectures and digital defense in 2023.</p>
+                </div>
+            </div>
+        </article>
+        
+    </main>
+
+    <!-- FOOTER SECTION (Consistent with other pages) -->
+    <footer>
+        <p>copyright &copy; 2024 TechCon Conference. All rights reserved.</p>
+    </footer>
