@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <!-- Consistent styling for the TechCon website -->
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f8f8;
+                color: #333;
+                line-height: 1.6;
+            }
+            header {
+                background-color: #0077b6; /* Conference blue */
+                color: white;
+                padding: 20px 40px;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 15px 0 0 0;
+                display: flex;
+                justify-content: center;
+                gap: 25px;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 15px;
+                transition: background-color 0.3s, border-radius 0.3s;
+                border-radius: 8px;
+            }
+            nav ul li a:hover {
+                background-color: #005f99;
+            }
+            main {
+                max-width: 1000px;
+                margin: 30px auto;
+                padding: 0 20px;
+                display: flex;
+                flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+                gap: 30px;
+            }
+            .content-card {
+                background-color: white;
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            }
+            #contact-info, #map-container {
+                flex: 1; /* Both sections take up equal space */
+                min-width: 300px; /* Minimum width before wrapping */
+            }
+            #form-section {
+                width: 100%; /* Form takes full width */
+                margin-top: 20px;
+            }
+            h2 {
+                color: #0077b6;
+                margin-top: 0;
+                margin-bottom: 25px;
+                border-bottom: 2px solid #e0f0ff;
+                padding-bottom: 10px;
+            }
+            /* Contact Info Specific Styling */
+            .contact-detail {
+                margin-bottom: 20px;
+            }
+            .contact-detail a {
+                color: #0077b6;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .social-links {
+                margin-top: 15px;
+            }
+            .social-links a {
+                font-size: 2em;
+                margin-right: 15px;
+                text-decoration: none;
+                color: #333;
+            }
+            /* Map Styling (Responsive Container) */
+            .map-wrapper {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 75%; /* 4:3 Aspect Ratio (75% of width) */
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .map-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+            /* Form Specific Styling */
+            .form-group {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+            }
+            input[type="text"], 
+            input[type="email"], 
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                box-sizing: border-box;
+            }
+            textarea {
+                resize: vertical;
+                min-height: 150px;
+            }
+            button[type="submit"] {
+                padding: 12px 25px;
+                background-color: #00c6a7;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 1em;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            button[type="submit"]:hover {
+                background-color: #009980;
+            }
+            footer {
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+                background-color: #333;
+                color: white;
+                margin-top: 50px;
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- HEADER SECTION -->
+        <header>
+            <h1>Contact Us</h1>
+            
+            <!-- NAVIGATION MENU -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT SECTION -->
+        <main>
+
+            <!-- CONTACT INFORMATION AND SOCIAL MEDIA -->
+            <section id="contact-info" class="content-card">
+                <h2>Get In Touch</h2>
+                <div class="contact-detail">
+                    <h3>General Inquiries</h3>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Venue Location</h3>
+                    <p>Tech Innovation Center</p>
+                    <p>123 Future Street, Metropolis, CA 90001</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Follow Us</h3>
+                    <p>Stay up-to-date with TechCon news and announcements!</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/techcon" target="_blank" aria-label="Twitter">🐦</a>
+                        <a href="https://linkedin.com/company/techcon" target="_blank" aria-label="LinkedIn">🔗</a>
+                        <a href="https://instagram.com/techcon" target="_blank" aria-label="Instagram">📸</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EMBEDDED GOOGLE MAPS -->
+            <section id="map-container" class="content-card">
+                <h2>Find Our Venue</h2>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.748689257278!2d-118.254937!3d34.052234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%20City%20Hall!5e0!3m2!1sen!2sus!4v1687834567890!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps location of the TechCon venue">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- CONTACT US FORM -->
+            <section id="form-section" class="content-card">
+                <h2>Send Us a Message</h2>
+                <form action="/submit-message" method="POST">
+                    
+                    <!-- Field for Name -->
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" name="contactName" required placeholder="Your Full Name">
+                    </div>
+
+                    <!-- Field for Email -->
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required placeholder="you@company.com">
+                    </div>
+                    
+                    <!-- Field for Message (Textarea) -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="What can we help you with?"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+            
+        </main>
+
+        <!-- FOOTER SECTION (Consistent with other pages) -->
+        <footer>
+            <p>copyright &copy; 2024 TechCon Conference. All rights reserved.</p>
+        </footer>
+
+    </body>
+    </html>
